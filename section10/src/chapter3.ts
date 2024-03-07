@@ -1,6 +1,6 @@
 //조건부 타입
 
-//1. Exclude<T, K>
+//1. Exclude<T, U>
 // Exclude 타입은 다음과 같이 T로부터 U를 제거하는 타입입니다.
 type A = Exclude<string | boolean, string>;
 // boolean
@@ -8,7 +8,7 @@ type A = Exclude<string | boolean, string>;
 type Exlcude<T, U> = T extends U ? never : T;
 
 
-//2. Extract<T, K>
+//2. Extract<T, U>
 // Extract 타입은 다음과 같이 T로 부터 U를 추출하는 타입입니다
 type B = Extract<string | boolean, boolean>;
 // boolean
